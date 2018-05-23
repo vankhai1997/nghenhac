@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:text="Xa em"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_artis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:text="No Phuoc Thinh"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tv_artis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/dianhac" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_time_played"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_below="@id/profile_image"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn_play"
+        android:id="@+id/tv_duration"
+        android:layout_marginLeft="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_below="@id/profile_image"
+        android:textColor="#fff"
+        android:textSize="23sp" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/sk_song"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_duration"
+        android:progressTint="#fff"
+        android:thumbTint="#fff" />
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btn_pause"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/ic_skip_next_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/btn_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sk_song"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/ic_pause_white_24dp" />
+
+
+    <ImageButton
+        android:id="@+id/btn_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sk_song"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/ic_play_arrow_white_24dp"
+        android:visibility="invisible" />
+
+
+    <ImageButton
+        android:id="@+id/btn_previous"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btn_pause"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:background="@drawable/ic_skip_previous_white_24dp" />
+</RelativeLayout>

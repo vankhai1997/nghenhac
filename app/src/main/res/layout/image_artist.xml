@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabsLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tab_bg_selector"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dip">
+    <ImageView
+        android:id="@+id/tmg_song"
+        android:layout_width="30dp"
+        android:src="@drawable/ic_settings_voice_white_24dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/tabsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist"
+        android:textColor="@drawable/tab_text_selector"
+        android:textSize="15dip" />
+</LinearLayout>

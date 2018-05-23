@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"></TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp">
+
+
+            <LinearLayout
+                android:id="@+id/tapcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rc_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9E9E9E" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tapcontent_album"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rc_audio_album"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9E9E9E" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tapcontent_artist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rc_audio_artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9E9E9E" />
+            </LinearLayout>
+        </FrameLayout>
+    </TabHost>
+
+    <FrameLayout
+        android:id="@+id/rlt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="500dp"
+        android:background="#9E9E9E"
+        android:clickable="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="Xa em"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:text="No Phuoc Thinh"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/apollo_holo_dark_next" />
+
+        <ImageButton
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/apollo_holo_dark_pause" />
+
+        <ImageButton
+            android:visibility="invisible"
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/apollo_holo_dark_play" />
+
+        <ImageButton
+            android:id="@+id/btn_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/apollo_holo_dark_prev" />
+    </FrameLayout>
+</FrameLayout>
